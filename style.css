@@ -24,16 +24,31 @@ p {
 header {
     height: 7rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
-}
-
-.logo {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
 .logo>img {
     height: 6rem;
+    object-fit: contain;
+}
+
+.heart>img {
+    height: 2rem;
+    object-fit: contain;
+}
+
+.heart {
+    margin-left: auto;
+    padding-right: 2rem;
 }
 
 /* Banner */
