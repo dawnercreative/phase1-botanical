@@ -95,3 +95,23 @@ header {
 .card:hover>img {
     opacity: 0.8;
 }
+
+
+@media (max-width: 768px) {
+
+    .banner {
+        height: 30rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .selection-container {
+        flex-direction: column;
+    }
+
+    .card>img {
+        width: 100%;
+    }
+}
