@@ -61,6 +61,9 @@ header {
     justify-content: space-evenly;
 }
 
+.card>img {
+    width: 20rem;
+}
 
 .plant-selection>h3 {
     padding-top: 4rem;
