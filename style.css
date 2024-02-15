@@ -92,3 +92,6 @@ header {
     font-weight: bold;
 }
 
+.card:hover>img {
+    opacity: 0.8;
+}
