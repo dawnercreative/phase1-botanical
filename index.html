@@ -58,18 +58,24 @@
     </section>
 
     <!-- Section with selected plant type cards - image and info about the plants. Include a filter button to filter through these types of plants, perhaps water, sunlight, poisonous etc. -->
-    <section>
+    <section class="display-plants">
         <div class="search">
-            <input type="text" id="search" placeholder="Search for plants">
-            <button id="searchButton">Search</button>
+            <input type="text" id="search" placeholder="Search for plants by name">
+            <button id="search-button">Search</button>
         </div>
         <div class="card-container">
-            <div>
-                <!-- Plant -->
-            </div>
-
-        </div>
+            <template id="plant-card-template">
+                <div class="plant-card">
+                    <img src="" class="plant-image">
+                    <div class="plant-info">
+                        <h3 class="plant-name"></h3>
+                        <!-- Add other required elements here -->
+                        <button class="like-button">Like</button>
+                    </div>
+                </div>
+            </template>
     </section>
+
 
     <!-- Footer -->
 
