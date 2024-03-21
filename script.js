@@ -35,7 +35,14 @@ function handlePlantEvent(event) {
 
 
 // Function to display plants on page
-
-
+function displayPlants(plants) {
+    plantContainer.innerHTML = '';
+    plants.forEach(plant => {
+        const plantCard = createPlantCard(plant);
+        plantContainer.appendChild(plantCard);
+        const plantButton = document.getElementById(plant.id);
+        plantButton.addEventListener('click', handlePlantEvent);
+    });
+}
 
 //Function to fetch plants from API
