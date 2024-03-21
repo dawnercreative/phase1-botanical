@@ -9,7 +9,7 @@ const SearchButton = document.querySelector('.search-button');
 
 
 //Function to create plant cards
-function createPlantCard({ common_name, scientific_name, cucle, default_image }) {
+function createPlantCard({ common_name, scientific_name, cycle, default_image }) {
     const plantCard = document.createElement('div');
     plantCard.className = 'plant-card';
     plantCard.innerHTML = `
@@ -25,7 +25,13 @@ function createPlantCard({ common_name, scientific_name, cucle, default_image })
 
 
 // Function to handle plant button click event
-
+function handlePlantEvent(event) {
+    const plantButton = event.target;
+    if (!plantButton.classList.contains('add-plant-button')) {
+        plantButton.textContent = 'Added';
+        plantButton.classList.add('added');
+    }
+}
 
 
 // Function to display plants on page
